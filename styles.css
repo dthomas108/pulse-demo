@@ -1,0 +1,402 @@
+/*html{
+
+}*/
+
+body {
+    font-family: 'Work Sans', 'Helvetica' ;
+    background-color: rgb(234, 250, 242);
+    margin: 0;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0%;
+    margin: auto 10%;
+    background-color:  rgb(234, 250, 242);
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+    margin-top: 0;
+}
+
+.header__logo__image {
+    height: 100%;
+    width: 7rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding-right: 1rem;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    list-style-type: none;
+    color: rgb(86, 192, 148);
+}
+
+.nav-link:hover {
+    color: black;
+}
+
+.pricing {
+    color: black;
+}
+
+
+.sign-up {
+    border: 2px solid rgb(86, 192, 148);
+    padding: 5px;
+}
+
+.sign-up a {
+    color:rgb(86, 192, 148);
+    text-decoration: none;
+}
+
+.sign-up:hover {
+    transform: translate(2px, -2px);
+    box-shadow: -4px 4px rgb(86, 192, 148);
+    color: rgb(86, 192, 148);
+}
+
+button {
+    border: none;
+    box-shadow: none;
+}
+
+/* Hero Section */
+main {
+    margin: 0 10%;
+}
+
+.hero__cards-top {
+    width: 50%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 60px;
+    text-align: center;
+    margin: 0;
+}
+
+.hero__title-info {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.info-section ul {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hero Basics */
+.hero__cards {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-top: 5%;
+    padding: 0 30px;
+}
+
+.info-section {
+    display: flex;
+    flex-direction:column;
+}
+
+.basics {
+    padding: 0 30px;
+}
+
+.hero__cards-info {
+    height: 100%;
+    width: 33.3%;
+    margin-top: 20px;
+}
+
+.hero__cards-info .plus, .hero__cards-info .premium {
+    background-color: white;
+    padding: 0 60px;
+}
+
+.basics h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #00ad6a;
+}
+
+.hero__cards ul {
+    font-size: 16px;
+    line-height: 24px;
+    color: #464951;
+    padding-left: 0;
+}
+
+.basics ul {
+        gap: 0;
+} 
+
+.basics a, .basics p, .basics ul {
+    color: #464951;
+}
+
+
+/* Hero Plus */
+.hero__cards .plus {
+border: 1px solid rgb(86, 192, 148);
+padding: 30px 20px;
+}
+
+.plus h2 {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+    margin: 0;
+    color: #00ad6a;
+    line-height: 40px;
+}
+
+.banner-plus {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    background: #00ad6a;
+    border: 2px solid #00ad6a;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+}
+
+.hero__cards-info span {
+    font-size: 24px;
+    text-align: center;
+    color: #83858A;
+    margin: 10px auto;
+}
+
+.button {
+    font-size: 18px;
+    color: #464951;
+    text-align: center;
+    font-weight: bold;
+    width: 50%;
+    margin: 10px auto;
+    border: 1px solid #1fe374;
+    background-color: #1fe374;
+    padding: 8px;
+}
+
+.info-link {
+    text-decoration: none;
+}
+
+.info-link:hover .button {
+    color: #7c7c82;
+    transform: scale(1.2);
+}
+
+.plus p, .premium p {
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    color: #464951;
+}
+
+.plus ul li, .premium ul li {
+    list-style-type: none;
+    background-image: url(./images/icon-check-bullet.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    line-height: 24px;
+    background-size: 10px 10px;
+    padding-left: 15px;
+}
+
+/* Hero Premium */
+
+.premium h2 {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 0;
+    color: #00ad6a;
+}
+
+.banner-premium {
+    text-align: center;
+    font-size: 14px;
+    color: #464951;
+    background-color: #f2f3f3;
+    padding: 20px 30px;
+    border: 1px solid #d6dae5;
+    border-bottom: none;
+}
+
+.hero__cards .premium {
+    border: 1px solid #d6dae5;
+    padding: 0 20px 20px;
+}
+
+/* Hero Bottom */
+
+.hero__bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 15%;
+}
+
+.hero__bottom-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.hero__bottom img {
+    height: 100%;
+    width: 10%;
+    align-self: center;
+}
+
+.bottom__text {
+    font-size: 24px;
+    line-height: 2rem;
+}
+
+.bottom__subtext {
+    font-size: 12px;
+    font-weight: 700;
+    color: #00ad6a;
+}
+
+/* FAQs */
+.faq-head {
+    background-color: #fff;
+    font-size: 48px;
+    padding: 10% 10% 0;
+    margin: 0;
+}
+
+.faqs {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 18px;
+    justify-content: center;
+    background-color: white;
+    padding: 0 5% 5%;
+}
+
+.faq {
+width: 45%;
+padding: 10px;
+}
+
+.faq h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* Footer */
+
+.footer {
+    background-color: black;
+    padding: 5% 10% 0;
+}
+
+.footer__top-left, .footer__middle {
+    width: 50%;
+}
+
+.footer__top {
+    display: flex;
+}
+.footer__top-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer__top-left a {
+    height: 35%;
+}
+
+.footer__top-left img {
+    height: 100%;
+}
+
+.trial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: 700;
+    width: 50%;
+    background: linear-gradient(#00ab6a , #22e776);
+    align-items: center;
+    text-decoration: none;
+}
+
+.trial:hover {
+    transform: translate(2px, -2px);
+    box-shadow: -6px 6px #7c7c82;
+    }
+
+.footer__middle{
+    display: flex;
+}
+
+.footer__middle ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+    list-style-type: none;
+    width: 33.3%;
+}
+
+.footer__middle ul a {
+    font-weight: 400;
+    color: #11d674;
+    text-decoration: none;
+}
+
+.footer__middle ul a:hover {
+    color: white;
+}
+
+.footer__bottom-legal {
+    margin-top: 10%;
+    font-size: 12px;
+    color: #83858A;
+}
+.footer__bottom-legal a {
+    color: #83858A;
+}
+
+.footer__bottom-legal a:hover {
+    color: #d6dae5;
+}
