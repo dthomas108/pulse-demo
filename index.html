@@ -4,104 +4,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="./images/pulse-favicon.png">
     <title>Pricing | Pulse</title>
 </head>
 
 <body>
     <header class="header">
-        <a href="home"><img class="header__logo__image" src="./images/pulse-logo.png" alt="pulse logo"></a>
-        <nav>
-            <!-- <i class="fa-sharp fa-solid fa-bars"></i> -->
-            <ul>
-                <li class="nav-link" href="#features">Features</li>
-                <li class="nav-link" href="#customer-stories">Customer Stories</li>
-                <li class="nav-link pricing" href="#pricing">Pricing</li>
-                <li class="nav-link" href="#blog">Blog</li>
-                <li class="nav-link sign-up"><a href="#sign-up">Sign Up</a></li>
-            </ul>
-        </nav>
+        <div >
+            <a href="home"><img class="header__logo__image" src="./images/pulse-logo.png" alt="pulse logo"></a>
+            <nav class="header__nav dropdown-content">
+                <ul>
+                    <li class="nav-link"><a href="#features">Features</a></li>
+                    <li class="nav-link"><a href="#customer-stories">Customer Stories</a></li>
+                    <li class="nav-link pricing"><a href="#pricing">Pricing</a></li>
+                    <li class="nav-link" ><a href="#blog">Blog</a></li>
+                    <li class="nav-link sign-up"><a href="#sign-up">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+        <button  class="dropdown"><i class="fa-sharp fa-solid fa-bars hamburger"></i></button>
     </header>
 
     <!-- Hero Section -->
-        <main class="hero__section">
-            <div class="hero__cards-top">
-                <h1 class="hero__title">Try Pulse free for 30 days.</h1>
-                <p class="hero__title-info">
-                    See why Pulse is the best way to monitor your cash flow. Sign up for any plan and try Pulse
-                    absolutely free for 30 days.
-                </p>
-            </div>
-
-            <div class="hero__cards">
-    <!-- Basics -->
-                <div class="hero__cards-info">
-                    <div class="info-section basics">
-                        <h2>These are what we call the Pulse Basics. They’re what every customer gets.</h2>
-                        <ul>
-                            <li>Manage cash flow on a daily, weekly, monthly, or yearly basis</li>
-                            <li>Forecast growth with recurring income or expenses that scale automatically</li>
-                            <li>Works with any currency</li>
-                            <li>See Money In and Money Out, categorize transactions, and run helpful reports</li>
-                            <li>Toggle entries and accounts on and off to game out different scenarios</li>
-                        </ul>
-                        <p>Just need Pulse Basics?<br><a href="#signUp">Get them now</a> for $29 per month.</p>
-                    </div>
-                </div>
-            
-                <!-- Plus -->
-                <div class="hero__cards-info">
-                    <a class="info-link" href="#">
-                        <div class="banner-plus">Recommended</div>
-                        <div class="info-section plus">
-                            <h2>Small Business Plan</h2>
-                            <span>$59 per month</span>
-                            <div class="button">Sign Up Now</div>
-                            <p>YOU'LL GET PULSE BASICS, PLUS:</p>
-                            <ul>
-                                <li>Manage cashflow across multiple financial accounts.</li>
-                                <li>Invite your investors, bookkeeper, or management team to see reports or manage cash flow</li>
-                                <li>Integrate with QuickBooks Online for more accurate cash flow</li>
-                                <li>Track your actual cash flow alongside your projected cash flow</li>
-                            </ul>
-                        </div>
-                    </a>
-                </div>
-            
-                <!-- Premium -->
-                <div class="hero__cards-info">
-                    <a class="info-link" href="#">
-                        <div class="banner-premium">Complex business with multiple financial accounts, currencies, or auditing needs?</div>
-                        <div class="info-section premium">
-                            <h2>Unlock Extra Features</h2>
-                            <span>$89 per month</span>
-                            <div class="button">Try Premium</div>
-                            <p>GET IT ALL, PLUS:</p>
-                            <ul>
-                                <li>Manage cash flow across unlimited financial accounts</li>
-                                <li>Convert to any currency for localized cash flow reporting and projections</li>
-                                <li>Attach invoices or contracts to your cash flow entries for accountability and auditing</li>
-                            </ul>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </main>
-
-            <!-- Hero Bottom -->
-            <div class="hero__bottom">
-                <div class="hero__bottom-container">
-                    <img src="./images/subvert-avatar@2x.png" alt="subvert logo" class="bottom__image">
-                    <p class="bottom__text">"Pulse is worth every penny because it empowers business owners with critical financial insight and knowledge."</p>
-                    <p class="bottom__subtext">SUBVERT MARKETING, INC</p>
-                </div>
-            </div>
+    <main class="hero__section">
+        <div class="hero__cards-top">
+            <h1 class="hero__title">Try Pulse free for 30 days.</h1>
+            <p class="hero__title-info">
+                See why Pulse is the best way to monitor your cash flow. Sign up for any plan and try Pulse
+                absolutely free for 30 days.
+            </p>
         </div>
 
-        <!-- FAQs  -->
+        <div class="hero__cards">
+            <!-- Basics -->
+            <div class="hero__cards-info">
+                <div class="info-section basics">
+                    <h2>These are what we call the Pulse Basics. They’re what every customer gets.</h2>
+                    <ul>
+                        <li>Manage cash flow on a daily, weekly, monthly, or yearly basis</li>
+                        <li>Forecast growth with recurring income or expenses that scale automatically</li>
+                        <li>Works with any currency</li>
+                        <li>See Money In and Money Out, categorize transactions, and run helpful reports</li>
+                        <li>Toggle entries and accounts on and off to game out different scenarios</li>
+                    </ul>
+                    <p>Just need Pulse Basics?<br><a href="#signUp">Get them now</a> for $29 per month.</p>
+                </div>
+            </div>
+
+            <!-- Plus -->
+            <div class="hero__cards-info">
+                <a class="info-link" href="#">
+                    <div class="banner-plus">Recommended</div>
+                    <div class="info-section plus">
+                    <div class="info1">
+                            <h2>Small Business Plan<span>$59 per month</span></h2>
+                        
+                            <p>YOU'LL GET PULSE BASICS, PLUS:</p>
+                    </div>
+                    <div class="info2">
+                        <ul>
+                            <li> Manage cashflow across multiple financial accounts.</li>
+                            <li>Invite your investors, bookkeeper, or management team to see reports or manage cash flow</li>
+                            <li>Integrate with QuickBooks Online for more accurate cash flow</li>
+                            <li>Track your actual cash flow alongside your projected cash flow</li>
+                        </ul>
+                    </div>
+                    <div class="info3">
+                        <div class="button">Sign Up Now</div>
+                    </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Premium -->
+            <div class="hero__cards-info">
+                <a class="info-link" href="#">
+                    <div class="banner-premium">Complex business with multiple financial accounts, currencies, or
+                        auditing needs?</div>
+                    <div class="info-section premium">
+                    <div class="info1">
+                            <h2>Unlock Extra Features<span>$89 per month</span></h2>
+                            
+                            <p>GET IT ALL, PLUS:</p>
+                        </div>
+                    
+                    <div class="info2">
+                        <ul>
+                            <li>Manage cash flow across unlimited financial accounts</li>
+                            <li>Convert to any currency for localized cash flow reporting and projections</li>
+                            <li>Attach invoices or contracts to your cash flow entries for accountability and auditing</li>
+                        </ul>
+                    </div>
+                    <div class="info3">
+                        <div class="button">Try Premium</div>
+                    </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Hero Bottom -->
+    <div class="hero__bottom">
+        <div class="hero__bottom-container">
+            <img src="./images/subvert-avatar@2x.png" alt="subvert logo" class="bottom__image">
+            <p class="bottom__text">"Pulse is worth every penny because it empowers business owners with critical
+                financial insight and knowledge."</p>
+            <p class="bottom__subtext">SUBVERT MARKETING, INC</p>
+        </div>
+    </div>
+
+    <!-- FAQs  -->
     <div>
         <h2 class="faq-head">FAQ</h2>
         <div class="faqs">
@@ -118,7 +136,8 @@
             </div>
             <div class="faq">
                 <h3 class="question">What is a “Financial Account”?</h3>
-                <p>Financial Accounts are a grouping of income and expense items that can be used for tracking or reporting
+                <p>Financial Accounts are a grouping of income and expense items that can be used for tracking or
+                    reporting
                     purposes.<br>They’re designed to be flexible and can be used to differentiate between bank accounts,
                     companies, individuals or between personal and business entries.</p>
             </div>
@@ -128,7 +147,8 @@
             </div>
             <div class="faq">
                 <h3 class="question">Will I be able to cancel my account if I don’t use Pulse?</h3>
-                <p>Yes – you can cancel your account at any time. To cancel your account, go to your billing page and click
+                <p>Yes – you can cancel your account at any time. To cancel your account, go to your billing page and
+                    click
                     on “Please cancel my account” at the bottom of the page. The account owner is the only one who can
                     cancel an account. An email request to delete an account is not considered cancellation.</p>
             </div>
